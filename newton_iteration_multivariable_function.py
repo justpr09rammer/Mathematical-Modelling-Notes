@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+plt.style.use('dark_background')
 
 def F(vec):
     x, y = vec
@@ -44,7 +45,6 @@ x_grid, y_grid = np.meshgrid(x, y)
 z1 = x_grid**2 + y_grid**2 - 4
 z2 = np.exp(x_grid) + y_grid - 1
 
-# Plotting
 fig = plt.figure(figsize=(14, 7))
 
 # Plot f1 surface
